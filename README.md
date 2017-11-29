@@ -22,15 +22,14 @@ Standalone Repository: https://github.com/mightymercado/Very-Fast-Lights-Out-Sol
 
 gcc lit.c -o lit -pthread 
 
-Parallel Runtime: 2.64
-
-Serial Runtime: 5.06
+Parallel Runtime: ~2.64
+Serial Runtime: ~5.06
 
 # Results with compiler optimizations
 
 gcc lit.c -o lit -pthread -Ofast -unroll-loops -mtune=intel -march=sandybridge 
 
-Parallel Runtime: 1.24
-
-Serial Runtime: 1.75
+Parallel Runtime (4 logical cores): ~1.24
+Parallel Runtime (2 physical cores): ~1.40
+Serial Runtime: ~1.75
 
