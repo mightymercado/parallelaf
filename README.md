@@ -9,11 +9,7 @@ Solving Lights Out Boards using Standard Depth-Parallelized Breadth-First Search
 # Issues
 1. Each thread uses the visited array which does cause race condition. However, it does not affect the optimality of the length of the solution.
 
-# Results with  gcc lit.c -o lit -pthread 
-Parallel Runtime: 2.64
-Serial Runtime: 5.06
-
-# Results with optimizations
+# Results without optimizations
 gcc lit.c -o lit -pthread 
 Parallel Runtime: 2.64
 Serial Runtime: 5.06
